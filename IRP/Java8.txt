@@ -1,0 +1,66 @@
+List<String>strings = Arrays.asList("abc", "", "bc", "efg", "abcd","", "jkl");
+//get count of empty string
+int count = strings.stream().filter(string -> string.isEmpty()).count();
+
+
+
+
+What are collectors in Java 8?
+Collectors are used to combine the result of processing on the elements of a stream. Collectors can be used to return a list or a string.
+
+List<String>strings = Arrays.asList("abc", "", "bc", "efg", "abcd","", "jkl");
+List<String> filtered = strings.stream().filter(string -> !string.isEmpty()).collect(Collectors.toList());
+System.out.println("Filtered List: " + filtered);
+String mergedString = strings.stream().filter(string -> !string.isEmpty()).collect(Collectors.joining(", "));
+System.out.println("Merged String: " + mergedString);
+
+
+How will you call a default method of an interface in a class?
+interface Vehicle {
+   default void print(){
+      System.out.println("I am a vehicle!");
+   }
+}
+class Car implements Vehicle {
+   public void print(){
+      Vehicle.super.print();                  
+   }
+}
+
+
+How will you call a static method of an interface in a class?
+interface Vehicle {
+   static void blowHorn(){
+      System.out.println("Blowing horn!!!");
+   }
+}
+class Car implements Vehicle {
+   public void print(){
+      Vehicle.blowHorn();                  
+   }
+}
+
+What is the difference between Collections and Stream in Java8 ?
+Stream operations do the iterations internally over the source elements provided, in contrast to Collections where explicit iteration is required.
+
+How will you get the highest number present in a list using Java 8?
+List<Integer> numbers = Arrays.asList(3, 2, 2, 3, 7, 3, 5);
+IntSummaryStatistics stats = integers.stream().mapToInt((x) -> x).summaryStatistics();
+System.out.println("Highest number in List : " + stats.getMax());
+
+
+How will you get the lowest number present in a list using Java 8?
+
+List<Integer> numbers = Arrays.asList(3, 2, 2, 3, 7, 3, 5);
+IntSummaryStatistics stats = integers.stream().mapToInt((x) -> x).summaryStatistics();
+
+
+How will you get the sum of all numbers present in a list using Java 8?
+List<Integer> numbers = Arrays.asList(3, 2, 2, 3, 7, 3, 5);
+IntSummaryStatistics stats = integers.stream().mapToInt((x) -> x).summaryStatistics();
+System.out.println("Sum of all numbers : " + stats.getSum());
+
+System.out.println("Lowest number in List : " + stats.getMin());
+
+
+getAverage()

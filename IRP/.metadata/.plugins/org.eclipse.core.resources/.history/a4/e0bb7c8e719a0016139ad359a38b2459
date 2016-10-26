@@ -1,0 +1,19 @@
+
+public class StudentSchedular {
+	
+	private Student[] student = new Student[10];
+	
+	
+	public String addStudent(int rollNumber,String name)
+	{
+		
+		
+		return "Student added successfully";
+	}
+	
+	public void showAllStudentDetails()
+	{
+		
+	}
+
+}

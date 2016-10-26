@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Admin {
+
+	private static Scanner sc =new Scanner(System.in);
+	private static StudentSchedular studSch = new StudentSchedular();
+	public static void main(String[] args) {
+		showMenu();
+
+	}
+
+	private static void showMenu() {
+		int choice;
+		
+		
+		
+	}
+
+}

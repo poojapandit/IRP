@@ -1,0 +1,20 @@
+Assignment on First Project
+
+1)complete the business logic of showAllStudents
+
+2)private int rollNumber;
+	private String name;
+  private String[] courseName;
+
+3)validation for duplicate roll number
+
+4)Reports
+  I)Individual report by roll number
+  II)How many courses registered by name
+
+5)package
+
+
+
+
+\\DIN51002991\25 Oct
